@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/gandalfTheBlue/TDD-practice#readme",
   "dependencies": {
+    "esm": "^3.2.25",
     "jest": "^24.9.0"
   }
 }
