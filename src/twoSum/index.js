@@ -9,13 +9,23 @@ module.exports = function twoSum(nums, target) {
   }
 
   let obj = {}
-  nums.forEach(num => (obj[num] = num))
   let result = null
-  Object.keys(obj).forEach(key => {
-    if (obj[target - key]) {
-      result = [obj[key], obj[target - key]]
+  for (let i = 0; i < nums.length; i++) {
+    const num = nums[i]
+    if (obj[target - num]) {
+      result = [num, obj[target - num]]
+      break
+    } else {
+      if (!obj[num]) {
+        obj[num] = num
+      } else {
+        if (num + num === target) {
+          result = [num, num]
+          break
+        }
+      }
     }
-  })
+  }
 
   return result
 }

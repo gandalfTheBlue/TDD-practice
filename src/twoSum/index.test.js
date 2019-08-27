@@ -39,3 +39,11 @@ it('should return the same array if meet the requirement', () => {
 
   expect(result[0] + result[1]).toBe(8)
 })
+
+it('should return the null if not meet the requirement', () => {
+  const param = [4, 7, 5]
+
+  const result = twoSum(param, 8)
+
+  expect(result).toBe(null)
+})
