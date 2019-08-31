@@ -1,4 +1,4 @@
-const twoSum = require('./index')
+const twoSum = require('./twoSum')
 
 it('should return the same array if meet the requirement', () => {
   const param = [2, 9]
